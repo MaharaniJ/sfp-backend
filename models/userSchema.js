@@ -24,9 +24,9 @@ const userSchema = new mongoose.Schema({
   mobile: {
     type: String,
     required: true,
-    unique:true,
-    minlength:10,
-    maxlength:10
+    unique: true,
+    minlength: 10,
+    maxlength: 10,
   },
   gender: {
     type: String,
@@ -44,9 +44,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  datecreated:Date,
-  dateUpdate:Date
+  datecreated: Date,
+  dateUpdate: Date,
 });
 
-const users = new mongoose.model("users",userSchema)
+const users = new mongoose.model("users", userSchema);
 module.exports = users;

@@ -16,7 +16,8 @@ try {
         const newuser = new users({
             fname,lname,email,mobile,gender,location,status
         })
-        newuser.save()
+        await newuser.save();
+        res.status(200).json(newuser)
     }
     
 } catch (error) {
